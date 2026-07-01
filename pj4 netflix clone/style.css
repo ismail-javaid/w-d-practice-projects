@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    
+
 }
-body{
+
+body {
     background-color: #000;
     font-family: poppins;
 }
 
-.hero{
+.hero {
     background-image: url(./assets/bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@ body{
     position: relative;
 }
 
-nav{
+nav {
     width: 80vw;
     display: flex;
     align-items: center;
@@ -28,13 +29,13 @@ nav{
     padding: 20px;
 }
 
-nav img{
+nav img {
     color: red;
     width: 120px;
-   
+
 }
-  
-nav button{
+
+nav button {
     padding: 8px 18px;
     border-radius: 6px;
     background-color: #e50914;
@@ -44,7 +45,7 @@ nav button{
     font-size: 14px;
 }
 
-.box{
+.box {
     height: 100vh;
     width: 100%;
     background: #000;
@@ -53,7 +54,7 @@ nav button{
     top: 0;
 }
 
-.hero-sec{
+.hero-sec {
     display: flex;
     justify-content: center;
     color: white;
@@ -66,42 +67,46 @@ nav button{
     gap: 20px;
 }
 
-.hero-sec span:nth-child(1){
+.hero-sec span:nth-child(1) {
     font-size: 60px;
     font-weight: 700;
-}    
-.hero-sec span:nth-child(2){
+}
+
+.hero-sec span:nth-child(2) {
     font-size: 25px;
     font-weight: 500;
     padding-bottom: 20px;
-}    
+}
 
-.hero-sec span:nth-child(3){
+.hero-sec span:nth-child(3) {
     font-size: 16px;
     font-weight: 600;
-}    
-div input::placeholder{
+}
+
+div input::placeholder {
     color: #5f5f5e;
 }
-.hero-button input{
+
+.hero-button input {
     padding: 15px 150px 15px 10px;
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
-    background-color:#141515d6;
+    background-color: #141515d6;
     border: 1px gray solid;
 }
 
-.hero-button button{
-     padding:10px 35px;
+.hero-button button {
+    padding: 10px 35px;
     font-size: 24px;
     font-weight: 500;
     border-radius: 5px;
-     background-color: #e50914;
+    background-color: #e50914;
     border: none;
     color: white;
 }
-.hero-button{
+
+.hero-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +114,7 @@ div input::placeholder{
     margin-bottom: 100px;
 }
 
-.curve-line{
+.curve-line {
     width: 100%;
     height: 60px;
     border-top: 4px solid #ff0055;
@@ -121,18 +126,208 @@ div input::placeholder{
     box-shadow: 0 -10px 10px rgba(255, 0, 120, 0.7);
 }
 
-main h2{
-    color: white;
-    padding : 20px 0;
-}
-.card{
-    width: 180px;
+main {
+    margin-left: 50px;
 }
 
-.card img{
+
+main>h2 {
+    color: white;
+    padding: 20px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+.card {
+    width: 200px;
+    position: relative;
+    flex-shrink: 0;
+
+
+
+}
+
+.card img {
     width: 100%;
     border-radius: 10px;
-    
+
+}
+
+.rank {
+    position: absolute;
+    font-size: 90px;
+    font-weight: 900;
+    left: -20px;
+    bottom: 20px;
+    -webkit-text-stroke: 2px white;
+
+
+}
+
+.heading {
+    margin: 50px 50px 0 0;
+    color: white;
+}
+
+.second-card {
+    width: 220px;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: radial-gradient(circle at 90% 90%,
+            #ff4db8 0%,
+            #b84dff 10%,
+            rgba(184, 77, 255, 0.15) 35%,
+            transparent 55%),
+        linear-gradient(180deg, #1b1637 0%, #0d0d18 100%);
+    margin-top: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.second-card p {
+    color: #b4b2ba;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tv-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.second-cards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.faq {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq h2 {
+    color: white;
+}
+
+.faq-content {
+    width: 80vw;
+    background-color: #2d2d2d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: 2px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.create-acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+
+.create-acc h4 {
+    color: white;
+
 }
 
 
+.acc-button input {
+    padding: 20px 400px 20px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #141515d6;
+    border: 1px gray solid;
+}
+
+.acc-button button {
+    padding: 16px 35px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+}
+
+.acc-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 20px;
+
+
+}
+
+.footer-item a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-sc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 50px 0;
+}
+
+.footer-sc button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    background: none;
+    color: rgba(255, 255, 255, 0.7);
+
+}
